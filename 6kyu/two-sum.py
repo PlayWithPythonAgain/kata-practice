@@ -13,7 +13,7 @@ def two_sum(numbers, target):
     for index, number in enumerate(numbers):
         subtraction = target - number
         if subtraction in numbers and numbers.index(subtraction) != index:
-            return (index, numbers.index(subtraction))
+            return index, numbers.index(subtraction)
 
 
 print(two_sum([1, 2, 3], 4))
